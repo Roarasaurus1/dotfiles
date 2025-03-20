@@ -65,7 +65,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 ## Aliases
 alias ls='ls --color'
-alias ll='ls -Lla'
+alias ll='ls -la'
 alias serial='sudo picocom /dev/ttyUSB0'
 alias ip='ip -c'
 alias neofetch='fastfetch'

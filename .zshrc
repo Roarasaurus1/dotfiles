@@ -8,7 +8,7 @@ if [ ! -d "$ZINIT_HOME" ]; then
 fi
 
 ## Source/load zinit.
-source "${ZINIT_HOME}/zinit.zsh" 
+source "${ZINIT_HOME}/zinit.zsh"
 
 ## Run Starship.
 eval "$(starship init zsh)"

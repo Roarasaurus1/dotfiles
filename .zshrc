@@ -68,6 +68,7 @@ alias ls='ls --color'
 alias ll='ls -la'
 alias serial='sudo picocom /dev/ttyUSB0'
 alias ip='ip -c'
+alias grep='grep --colour=auto'
 alias neofetch='fastfetch'
 
 ## Shell integrations.

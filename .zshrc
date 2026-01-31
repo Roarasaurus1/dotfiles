@@ -64,12 +64,14 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 
 ## Aliases
+alias zource='source ~/.zshrc'
 alias ls='ls --color'
 alias ll='ls -la'
-alias serial='sudo picocom /dev/ttyUSB0'
+alias serialusb='sudo picocom /dev/ttyUSB0'
 alias ip='ip -c'
 alias grep='grep --colour=auto'
 alias neofetch='fastfetch'
+alias diff='diff -y --color'
 
 ## Shell integrations.
 eval "$(fzf --zsh)"

@@ -1,0 +1,14 @@
+#! /usr/bin/env sh
+# this is a example of .lessfilter, you can change it
+mime=$(file -bL --mime-type "$1")
+category=${mime%%/*}
+kind=${mime##*/}
+if [ -d "$1" ]; then
+	eza --git --oneline --color=always --icons "$1"
+elif [ "$category" = image ]; then
+#	chafa "$1"
+	exiftool "$1"
+elif [ "$category" = text ]; then
+	cat "$1"
+fi
+# lesspipe.sh don't use eza, bat and chafa, it use ls and exiftool. so we create a lessfilter.
